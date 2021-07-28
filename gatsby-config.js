@@ -31,16 +31,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-             family: 'Alegreya SC'
-          },
-          {
-             family: 'Andada' // good body font
-          }
+          'Alegreya SC','Andada' // good body font
         ],
+        display: 'swap'
       },
    },
    {

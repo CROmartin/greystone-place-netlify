@@ -35,7 +35,7 @@ const Footer = ({ siteTitle }) => (
 		</div>
 		<div id="legalFooter">
 			<p>© {new Date().getFullYear()}, {siteTitle}</p>
-			<p>Website by <a href="https://peakwebsites.ca" target="_blank" title="Peak Websites" style={{fontFamily: 'Arial'}}>Peak Websites</a></p>
+			<small><p>Website by <a href="https://peakwebsites.ca" target="_blank" title="Peak Websites">Peak Websites</a></p></small>
 		</div>
 	</div>
 )

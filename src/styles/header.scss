@@ -14,7 +14,11 @@ $hamburger-layer-color: var(--pale-taupe);
 	font-family: var(--secondary-font);
 	font-size: var(--padding-md);
 	text-transform: lowercase;
-	background-color: var(--dark-color);
+    // background-color: var(--background-opacity);
+    background: radial-gradient(var(--background-opacity), rgba(2, 2, 2, 0.75)), url('../images/greyblock-background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	color: var(--pale-taupe);
 	display: flex;
 	flex-wrap: wrap;
@@ -22,6 +26,9 @@ $hamburger-layer-color: var(--pale-taupe);
 	position: relative;
 	padding: var(--padding-sm);
 	border-bottom: var(--hero-border);
+    // border-top: 25px solid var(--dark-color);
+    padding: 0 var(--padding-sm) var(--scale-reg);
+    padding-top: var(--scale-xxxl);
 
 	a {
 		color: inherit;
@@ -64,11 +71,17 @@ $hamburger-layer-color: var(--pale-taupe);
 
 	#contactBar {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		color: inherit;
 		font-family: var(--header-font);
-		font-size: var(--scale-md);
+		font-size: var(--scale-xxl);
+        background-color: var(--background-opacity);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10000;
 		.phone-icon {
 			font-size: var(--scale-xs);
 			height: 1em;
@@ -78,10 +91,14 @@ $hamburger-layer-color: var(--pale-taupe);
 			display: inline-block;
 		}
 		#headerPhone a {
-			padding: var(--padding-xxs);
+			padding-right: var(--scale-xs);
 			color: var(--pale-taupe);
 			color: inherit;
 			font-style: oblique;
+            display: block;
+            &:hover {
+                color: var(--fire-brick);
+            }
 		}
 
 	}
@@ -114,15 +131,16 @@ $hamburger-layer-color: var(--pale-taupe);
 
 		/* absolute positioned phone number */
 		&.position-number {
-			position: relative;
+			// position: relative;
 			#contactBar {
 				display: block;
-				position: absolute;
-				top: 0;
-				right: 0;
+				// position: absolute;
+				// top: 0;
+				// right: 0;
 				text-align: right;
-				font-size: var(--scale-reg);
-				margin-right: var(--padding-xxxl);
+				font-size: var(--scale-md);
+				// margin-right: var(--padding-xxxl);
+                // margin-bottom: var(--scale-reg);
 			}
 		}
 	}

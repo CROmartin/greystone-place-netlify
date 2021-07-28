@@ -34,9 +34,8 @@ section * + * {
 			background-color: var(--footer-grey);
 			border-top: 1px solid var(--dark-color);
 			border-bottom: 1px solid var(--dark-color);
-			// + .section {
-			// 	margin-top: var(--padding-xl);
-			// }
+            padding-top: var(--scale-lg);
+            padding-bottom: var(--scale-lg);
 			.image-box {
 				border-color: var(--khaki-pale);
 				margin-bottom: var(--vertical-rhythm);
@@ -48,7 +47,7 @@ section * + * {
 		}
 		&.reverse-layout {
 			font-size: var(--scale-md);
-			padding: var(--scale-lg) var(--viewport-padding-alt);
+			// padding: ;
 			padding-left: var(--scale-reg);
 			padding-right: var(--scale-reg);
 			background-color: var(--pale-taupe);
@@ -56,7 +55,7 @@ section * + * {
 			border-top: 2px solid var(--dark-color);
 			border-bottom: 2px solid var(--dark-color);
 			p { font-family: var(--secondary-header-font); }
-			h1, h2, h3 { margin-top: 0; }
+			// h1, h2, h3 { margin-top: 0; }
 			a {
 				color: inherit;
 				text-decoration: underline;
@@ -191,7 +190,7 @@ section * + * {
 
 	#main-container {
 		border: var(--special-border);
-		margin: 0 auto;
+		margin: var(--scale-lg) auto 0;
 		padding: 0;
 		clear: both;
 		.section {

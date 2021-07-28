@@ -39,6 +39,9 @@ export default class Header extends React.Component {
       const { siteTitle, description } = this.props
       return (
          <header id="header" className="position-number">
+           <div id="contactBar" className="">
+             <p id="headerPhone"><a href="tel:+19055742626" title="Call Greystone Place" onClick={trackGoogle} data-type="Call" data-location="header"><span className="phone-icon"><FontAwesomeIcon icon={faPhone} /></span>&nbsp;905-574-2626</a></p>
+           </div>
            <div id="marqueeContainer" className="centered">
              <h1 id="headline">
                <Link to="/" title="Home">
@@ -48,9 +51,7 @@ export default class Header extends React.Component {
              <p id="byline" className="byline">{description}</p>
            </div>
            <Nav menuOpen={this.state.menuOpen} />
-           <div id="contactBar" className="">
-             <p id="headerPhone"><a href="tel:+19055742626" title="Call Greystone Place" onClick={trackGoogle} data-type="Call" data-location="header"><span className="phone-icon"><FontAwesomeIcon icon={faPhone} /></span>&nbsp;905-574-2626</a></p>
-           </div>
+           
 
            <button id="mobMenu" onClick={this.toggleMenu} className="hamburger hamburger--spin" type="button">
              <span className="hamburger-box">

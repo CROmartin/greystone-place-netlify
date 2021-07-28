@@ -107,7 +107,7 @@ export default class IndexPage extends React.Component {
                </article>
             </section>
 
-            <section className="section reverse-layout">
+            <section className="section reverse-layout feather-nest">
                <h3 className="h2">" Feather Your Nest "</h3>
                <p>Plan ahead to <em>"Feather Your Nest"</em> and stay in a personalized and worry-free setting. Explore our <Link to="/designer-upgrade-packages">Designer Upgrades Packages</Link> while being close to friends, family, and convenient surroundings.</p>
                <Link to="/designer-upgrade-packages" className="cta">Learn more</Link>

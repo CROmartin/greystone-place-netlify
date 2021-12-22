@@ -36,7 +36,7 @@ $hamburger-layer-color: var(--pale-taupe);
 
 	#mobMenu {
 		border: none;
-		z-index: 11111;
+		z-index: 1;
 		background-color: inherit;
 		color: inherit;
 		padding: var(--padding-xs);
@@ -84,8 +84,9 @@ $hamburger-layer-color: var(--pale-taupe);
         top: 0;
         left: 0;
         z-index: 10000;
+        height: 4rem;
         > div#contactBarAddress {
-            font-size: var(--scale-xs);
+            font-size: var(--scale-sm);
             text-transform: none;
         }
         .contactBar_item {

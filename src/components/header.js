@@ -42,7 +42,7 @@ export default class Header extends React.Component {
             <div id="contactBar" className="">
                 <div id="contactBarAddress" className='contactBar_item'>
                     <Link to="/contact#address" title="Map">
-                        <span>512 Mohawk Road East, Hamilton, L8V 2J2</span>
+                        <span>512 Mohawk Rd. E, Hamilton, L8V 2J2</span>
                     </Link>
                 </div>
                 <div> 

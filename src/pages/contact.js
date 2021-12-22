@@ -21,7 +21,7 @@ export default () => (
    	 <p>To speed things up, you may download and complete a <a href={applicationform} download="Tenancy Application - Greystone Place" title="Download an application form to apply for tenancy" onClick={trackGoogle} data-type="Apply" data-location="contact">Rental Application Form&nbsp;<FontAwesomeIcon icon={faFilePdf} /></a> to bring with you to the viewing.</p>
        {/*<p>For all other inquiries, please call <a href="tel:+19055742626" title="Click to call" onClick={trackGoogle} data-type="Call" data-location="contact">905-574-2626</a> or use the contact form below.</p>*/}
        {/* <ContactForm /> */}
-       <div className="google-maps-container left">
+       <div id="address" className="google-maps-container left">
          <Address />
          <GoogleMap id="contactMap"/>
        </div>

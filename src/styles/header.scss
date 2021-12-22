@@ -36,13 +36,15 @@ $hamburger-layer-color: var(--pale-taupe);
 
 	#mobMenu {
 		border: none;
-		z-index: 1;
+		z-index: 11111;
 		background-color: inherit;
 		color: inherit;
 		padding: var(--padding-xs);
 		display: flex;
 		justify-content: center;
 		align-items: center;
+        margin-right: 0;
+        margin-left: auto;
 	}
 
 	#marqueeContainer {
@@ -71,17 +73,27 @@ $hamburger-layer-color: var(--pale-taupe);
 
 	#contactBar {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		color: inherit;
 		font-family: var(--header-font);
-		font-size: var(--scale-xxl);
+		// font-size: var(--scale-xxl);
         background-color: var(--background-opacity);
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         z-index: 10000;
+        > div#contactBarAddress {
+            font-size: var(--scale-xxs);
+            text-transform: none;
+        }
+        .contactBar_item {
+			padding: 0 var(--scale-xs);
+            a:hover {
+                color: var(--fire-brick);
+            }
+        }
 		.phone-icon {
 			font-size: var(--scale-xs);
 			height: 1em;
@@ -91,7 +103,7 @@ $hamburger-layer-color: var(--pale-taupe);
 			display: inline-block;
 		}
 		#headerPhone a {
-			padding-right: var(--scale-xs);
+			// padding-right: var(--scale-xs);
 			color: var(--pale-taupe);
 			color: inherit;
 			font-style: oblique;
@@ -112,7 +124,7 @@ $hamburger-layer-color: var(--pale-taupe);
 		}
 
 		#contactBar {
-			justify-content: center;
+			justify-content: space-between;
 			width: 100%;
 
 			/* removes the phone number */
@@ -133,7 +145,7 @@ $hamburger-layer-color: var(--pale-taupe);
 		&.position-number {
 			// position: relative;
 			#contactBar {
-				display: block;
+				// display: block;
 				// position: absolute;
 				// top: 0;
 				// right: 0;

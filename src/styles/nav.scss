@@ -61,7 +61,7 @@
 			}
 			&.drawer-open {
 				left: 0;
-                top: 32px;
+                top: 4rem;
 				transition: left 0.5s ease-in-out;
 				min-width: var(--mobile-menu-min);
                 padding: var(--scale-reg) var(--scale-reg) 0;

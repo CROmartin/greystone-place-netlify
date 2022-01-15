@@ -50,6 +50,7 @@ $hamburger-layer-color: var(--pale-taupe);
 	#marqueeContainer {
 		flex-basis: 100%;
 		color: var(--pale-taupe);
+        padding-top: var(--scale-reg);
 		#headline {
 			font-weight: 400;
 			color: inherit;
@@ -84,7 +85,7 @@ $hamburger-layer-color: var(--pale-taupe);
         top: 0;
         left: 0;
         z-index: 10000;
-        height: 4rem;
+        padding: .25rem;
         > div#contactBarAddress {
             font-size: var(--scale-sm);
             text-transform: none;

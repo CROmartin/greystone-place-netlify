@@ -116,7 +116,10 @@ ul {
 			width: auto;
 		}
 	}
-
+}
+/* make map full width on contact page */
+#address.google-maps-container {
+    width: 100%;
 }
 
 .theme-button {

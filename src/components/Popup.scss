@@ -1,0 +1,137 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 9999;
+
+  @media (max-width: 768px) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  @media (max-width: 600px) {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.popup-content {
+  max-width: 80%;
+
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  video {
+    border: var(--hero-border);
+    min-width: 1010px;
+    width: 100%;
+    max-height: 80vh;
+    background: transparent url('../images/Image-38.jpg') no-repeat 0 0;
+    background-size: 100% 100%;
+    margin-top: auto;
+  }
+
+  svg {
+    max-width: 48px;
+    max-height: 48px;
+    // transform: translateY(-56px);
+    transform: translateX(57px) translateY(8px);
+    z-index: 9000;
+    color: white;
+    // color: black;
+
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .content-holder {
+    padding-top: 0;
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 1980px) {
+    video {
+      min-width: 567px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .content-holder {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    section {
+      padding-left: 10% !important;
+      padding-right: 10% !important;
+    }
+  }
+
+  @media (max-width: 900px) {
+    max-width: 80%;
+
+    video {
+      min-width: 300px;
+    }
+
+    section {
+      padding-left: 5% !important;
+      padding-right: 5% !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    border: var(--hero-border);
+
+    background: transparent url('../images/Image-38.jpg') no-repeat 0 0;
+    background-size: 100% 100%;
+    height: calc(100vw * 0.58);
+
+    svg {
+      max-width: 32px;
+      max-height: 32px;
+
+      transform: translateY(-40px);
+      // transform: translateX(36px) translateY(4px);
+    }
+    video {
+      display: none;
+
+      width: 100%;
+      min-width: 100vw;
+    }
+    width: 100%;
+    width: 100vw;
+
+    max-width: 100%;
+  }
+
+  @media (max-width: 425px) {
+    video {
+      min-width: 250px;
+    }
+
+    .content-holder {
+      padding-bottom: 5%;
+    }
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    min-height: 32px;
+    width: 100%;
+  }
+}
